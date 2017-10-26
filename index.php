@@ -11,7 +11,12 @@
     <div class="container text-center">
         <h1 class="jumbrotron">Welcome to the Valet App</h1>
     </div>
-    
-    <a href="resources/views/dropoff.html"><div class="btn btn-primary">Go to Dropoff</div></a>
+    <div class="container text-center">
+        <img src="img/valet.png" ></img>
+        <br/>
+        
+        <a href="resources/views/dropoff.html"><div class="btn btn-primary">Go to Dropoff</div></a>
+        <a href="resources/functions/admin.php"><div class="btn btn-primary">Go to Admin</div></a>
+    </div>
 </body>
 </html>

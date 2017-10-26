@@ -1,1 +1,154 @@
 [22-Oct-2017 19:09:37 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 19
+[24-Oct-2017 00:06:04 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 17
+[24-Oct-2017 00:06:04 UTC] PHP Stack trace:
+[24-Oct-2017 00:06:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/insert.php:0
+[24-Oct-2017 00:06:04 UTC] PHP   2. createTicket() /home/ubuntu/workspace/valet/resources/functions/insert.php:7
+[24-Oct-2017 00:06:04 UTC] PHP   3. getDropOffDriver() /home/ubuntu/workspace/valet/resources/functions/insert.php:69
+[24-Oct-2017 00:09:20 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 18
+[24-Oct-2017 00:09:20 UTC] PHP Stack trace:
+[24-Oct-2017 00:09:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/insert.php:0
+[24-Oct-2017 00:09:20 UTC] PHP   2. createTicket() /home/ubuntu/workspace/valet/resources/functions/insert.php:7
+[24-Oct-2017 00:09:20 UTC] PHP   3. getDropOffDriver() /home/ubuntu/workspace/valet/resources/functions/insert.php:70
+[24-Oct-2017 00:09:44 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 18
+[24-Oct-2017 00:09:44 UTC] PHP Stack trace:
+[24-Oct-2017 00:09:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/insert.php:0
+[24-Oct-2017 00:09:44 UTC] PHP   2. createTicket() /home/ubuntu/workspace/valet/resources/functions/insert.php:7
+[24-Oct-2017 00:09:44 UTC] PHP   3. getDropOffDriver() /home/ubuntu/workspace/valet/resources/functions/insert.php:70
+[24-Oct-2017 00:09:50 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 18
+[24-Oct-2017 00:09:50 UTC] PHP Stack trace:
+[24-Oct-2017 00:09:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/insert.php:0
+[24-Oct-2017 00:09:50 UTC] PHP   2. createTicket() /home/ubuntu/workspace/valet/resources/functions/insert.php:7
+[24-Oct-2017 00:09:50 UTC] PHP   3. getDropOffDriver() /home/ubuntu/workspace/valet/resources/functions/insert.php:70
+[24-Oct-2017 00:09:52 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 18
+[24-Oct-2017 00:09:52 UTC] PHP Stack trace:
+[24-Oct-2017 00:09:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/insert.php:0
+[24-Oct-2017 00:09:52 UTC] PHP   2. createTicket() /home/ubuntu/workspace/valet/resources/functions/insert.php:7
+[24-Oct-2017 00:09:52 UTC] PHP   3. getDropOffDriver() /home/ubuntu/workspace/valet/resources/functions/insert.php:70
+[24-Oct-2017 00:13:59 UTC] PHP Warning:  Missing argument 1 for getDropOffDriver(), called in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 66 and defined in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 13
+[24-Oct-2017 00:13:59 UTC] PHP Stack trace:
+[24-Oct-2017 00:13:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/insert.php:0
+[24-Oct-2017 00:13:59 UTC] PHP   2. createTicket() /home/ubuntu/workspace/valet/resources/functions/insert.php:7
+[24-Oct-2017 00:13:59 UTC] PHP   3. getDropOffDriver() /home/ubuntu/workspace/valet/resources/functions/insert.php:66
+[24-Oct-2017 00:13:59 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 17
+[24-Oct-2017 00:13:59 UTC] PHP Stack trace:
+[24-Oct-2017 00:13:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/insert.php:0
+[24-Oct-2017 00:13:59 UTC] PHP   2. createTicket() /home/ubuntu/workspace/valet/resources/functions/insert.php:7
+[24-Oct-2017 00:13:59 UTC] PHP   3. getDropOffDriver() /home/ubuntu/workspace/valet/resources/functions/insert.php:66
+[24-Oct-2017 00:14:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '7,CURRENT_TIMESTAMP)' at line 2' in /home/ubuntu/workspace/valet/resources/functions/insert.php:74
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/insert.php(74): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/insert.php(7): createTicket(Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 74
+[24-Oct-2017 00:17:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 7, `CURRENT_TIMESTAMP`)' at line 2' in /home/ubuntu/workspace/valet/resources/functions/insert.php:74
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/insert.php(74): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/insert.php(7): createTicket(Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 74
+[24-Oct-2017 00:20:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 7, NOW())' at line 2' in /home/ubuntu/workspace/valet/resources/functions/insert.php:74
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/insert.php(74): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/insert.php(7): createTicket(Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 74
+[24-Oct-2017 00:27:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 7, 2017-10-24 00:27:32' at line 2' in /home/ubuntu/workspace/valet/resources/functions/insert.php:76
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/insert.php(76): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/insert.php(7): createTicket(Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 76
+[24-Oct-2017 00:29:11 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 7, CURRENT_TIME()' at line 2' in /home/ubuntu/workspace/valet/resources/functions/insert.php:76
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/insert.php(76): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/insert.php(7): createTicket(Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 76
+[24-Oct-2017 00:32:08 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 7, NOW())' at line 2' in /home/ubuntu/workspace/valet/resources/functions/insert.php:76
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/insert.php(76): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/insert.php(7): createTicket(Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 76
+[24-Oct-2017 00:33:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '11' for key 'idx_parking_spot'' in /home/ubuntu/workspace/valet/resources/functions/insert.php:75
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/insert.php(75): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/insert.php(7): createTicket(Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 75
+[24-Oct-2017 00:34:14 UTC] PHP Warning:  Missing argument 3 for updateParkingSpot(), called in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 85 and defined in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 91
+[24-Oct-2017 00:34:14 UTC] PHP Stack trace:
+[24-Oct-2017 00:34:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/insert.php:0
+[24-Oct-2017 00:34:14 UTC] PHP   2. createTicket() /home/ubuntu/workspace/valet/resources/functions/insert.php:7
+[24-Oct-2017 00:34:14 UTC] PHP   3. updateParkingSpot() /home/ubuntu/workspace/valet/resources/functions/insert.php:85
+[24-Oct-2017 00:34:14 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 94
+[24-Oct-2017 00:34:14 UTC] PHP Stack trace:
+[24-Oct-2017 00:34:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/insert.php:0
+[24-Oct-2017 00:34:14 UTC] PHP   2. createTicket() /home/ubuntu/workspace/valet/resources/functions/insert.php:7
+[24-Oct-2017 00:34:14 UTC] PHP   3. updateParkingSpot() /home/ubuntu/workspace/valet/resources/functions/insert.php:85
+[24-Oct-2017 00:35:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '35' for key 'idx_customer_id'' in /home/ubuntu/workspace/valet/resources/functions/insert.php:75
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/insert.php(75): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/insert.php(7): createTicket(Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 75
+[24-Oct-2017 00:36:13 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '13' for key 'idx_parking_spot'' in /home/ubuntu/workspace/valet/resources/functions/insert.php:76
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/insert.php(76): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/insert.php(7): createTicket(Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 76
+[24-Oct-2017 00:38:19 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '13' for key 'idx_parking_spot'' in /home/ubuntu/workspace/valet/resources/functions/insert.php:76
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/insert.php(76): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/insert.php(7): createTicket(Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 76
+[24-Oct-2017 00:38:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '13' for key 'idx_parking_spot'' in /home/ubuntu/workspace/valet/resources/functions/insert.php:76
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/insert.php(76): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/insert.php(7): createTicket(Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 76
+[24-Oct-2017 18:00:32 UTC] PHP Parse error:  syntax error, unexpected 'invite' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 17
+[24-Oct-2017 18:02:31 UTC] PHP Warning:  Missing argument 1 for spotsAvailable(), called in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 59 and defined in /home/ubuntu/workspace/valet/resources/functions/database.php on line 39
+[24-Oct-2017 18:02:31 UTC] PHP Stack trace:
+[24-Oct-2017 18:02:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/insert.php:0
+[24-Oct-2017 18:02:31 UTC] PHP   2. spotsAvailable() /home/ubuntu/workspace/valet/resources/functions/insert.php:59
+[24-Oct-2017 18:02:31 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/valet/resources/functions/database.php on line 42
+[24-Oct-2017 18:02:31 UTC] PHP Stack trace:
+[24-Oct-2017 18:02:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/insert.php:0
+[24-Oct-2017 18:02:31 UTC] PHP   2. spotsAvailable() /home/ubuntu/workspace/valet/resources/functions/insert.php:59
+[24-Oct-2017 19:11:09 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 14
+[24-Oct-2017 19:13:55 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/valet/resources/functions/database.php on line 151
+[24-Oct-2017 19:13:55 UTC] PHP Stack trace:
+[24-Oct-2017 19:13:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/insert.php:0
+[24-Oct-2017 19:15:16 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/valet/resources/functions/database.php on line 153
+[24-Oct-2017 19:15:16 UTC] PHP Stack trace:
+[24-Oct-2017 19:15:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/insert.php:0
+[24-Oct-2017 19:15:16 UTC] PHP   2. displayTicket() /home/ubuntu/workspace/valet/resources/functions/insert.php:73
+[24-Oct-2017 19:15:16 UTC] PHP   3. getTicketData() /home/ubuntu/workspace/valet/resources/functions/insert.php:5
+[24-Oct-2017 19:15:38 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/valet/resources/functions/database.php on line 153
+[24-Oct-2017 19:15:38 UTC] PHP Stack trace:
+[24-Oct-2017 19:15:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/insert.php:0
+[24-Oct-2017 19:15:38 UTC] PHP   2. displayTicket() /home/ubuntu/workspace/valet/resources/functions/insert.php:73
+[24-Oct-2017 19:15:38 UTC] PHP   3. getTicketData() /home/ubuntu/workspace/valet/resources/functions/insert.php:5
+[24-Oct-2017 19:17:13 UTC] PHP Warning:  Missing argument 1 for displayTicket(), called in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 73 and defined in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 4
+[24-Oct-2017 19:17:13 UTC] PHP Stack trace:
+[24-Oct-2017 19:17:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/insert.php:0
+[24-Oct-2017 19:17:13 UTC] PHP   2. displayTicket() /home/ubuntu/workspace/valet/resources/functions/insert.php:73
+[24-Oct-2017 19:17:13 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/valet/resources/functions/database.php on line 153
+[24-Oct-2017 19:17:13 UTC] PHP Stack trace:
+[24-Oct-2017 19:17:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/insert.php:0
+[24-Oct-2017 19:17:13 UTC] PHP   2. displayTicket() /home/ubuntu/workspace/valet/resources/functions/insert.php:73
+[24-Oct-2017 19:17:13 UTC] PHP   3. getTicketData() /home/ubuntu/workspace/valet/resources/functions/insert.php:5
+[24-Oct-2017 19:17:31 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/valet/resources/functions/database.php on line 153
+[24-Oct-2017 19:17:31 UTC] PHP Stack trace:
+[24-Oct-2017 19:17:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/insert.php:0
+[24-Oct-2017 19:17:31 UTC] PHP   2. displayTicket() /home/ubuntu/workspace/valet/resources/functions/insert.php:73
+[24-Oct-2017 19:17:31 UTC] PHP   3. getTicketData() /home/ubuntu/workspace/valet/resources/functions/insert.php:5
+[24-Oct-2017 19:27:56 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/valet/resources/functions/database.php on line 153
+[24-Oct-2017 19:27:56 UTC] PHP Stack trace:
+[24-Oct-2017 19:27:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/insert.php:0
+[24-Oct-2017 19:27:56 UTC] PHP   2. displayTicket() /home/ubuntu/workspace/valet/resources/functions/insert.php:74
+[24-Oct-2017 19:27:56 UTC] PHP   3. getTicketData() /home/ubuntu/workspace/valet/resources/functions/insert.php:6
