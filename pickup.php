@@ -14,9 +14,9 @@
         function play(){
             $dbHost = getenv('IP');
             $dbPort = 3306;
-            $dbName = "valet";
-            $username = getenv('C9_USER');
-            $password = "";
+            $dbName = getenv('DATABASE_NAME');
+            $username = getenv('DATABASE_USERNAME');
+            $password = getenv('DATABASE_PASSWORD');
             
             $dbConn = new PDO("mysql:host=$dbHost;port=$dbPort;dbname=$dbName", $username, $password);
             $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 

@@ -1,22 +1,20 @@
 <?php
 
 /*--- Database Connection ---*/
-$dbHost = getenv('IP');
+$dbHost = getenv('DATABASE_HOST');
 $dbPort = 3306;
-$dbName = "valet";
-$username = getenv('C9_USER');
-$password = "";
+$dbName = getenv('DATABASE_NAME');
+$username = getenv('DATABASE_USER');
+$password = getenv('DATABASE_PASSWORD');
 
 $dbConn = new PDO("mysql:host=$dbHost;port=$dbPort;dbname=$dbName", $username, $password);
 $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 /*--------------------------*/
 
-
 $table = '';
 if (isset($_POST['table'])) {
     $table = $_POST['table'];
 }
-
 
 if(!isset($_POST['filter'])) {
     if ($table == 'driver') {
@@ -386,6 +384,4 @@ function executeSQL($dbConn, $sql) {
     $stmt -> execute ();
     return $stmt;
 }
-
-  
 ?>

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <script src="../js/pickup.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
    
 </head>
 <body>
@@ -20,7 +21,7 @@
     
     play();
     function play(){
-        echo "<div class = 'parkingLotContainer container-fluid'>";
+        echo "<div class = 'parkingLotContainer'>";
         genCarArray();
         genParkingLotArray();
         genParkingLot();
@@ -28,9 +29,9 @@
         $carArray = $carArray[0];
         // print_r($carArray);
         echo "</div>";
-        echo "<div class = 'infoDisplayContainer container-fluid'>";
+        echo "<div class = 'infoDisplayContainer'>";
         echo '<div class="centerInfoDisplay">';
-        echo '<img src="../img/valet.png" class "image-fluid" ></img>';
+        echo '<img src="../img/valet.png" ></img>';
         echo "<div class = 'leftInfoDisplay'>";
         if(isset($_POST['button'])){
             $carOwner = key($_POST['button']);
@@ -129,12 +130,11 @@
         echo "</div>";
     }
     function genCarArray(){
-        $carCount=0;
-        $dbHost = getenv('IP');
+        $dbHost = getenv('DATABASE_HOST');
         $dbPort = 3306;
-        $dbName = "valet";
-        $username = getenv('C9_USER');
-        $password = "";
+        $dbName = getenv('DATABASE_NAME');
+        $username = getenv('DATABASE_USER');
+        $password = getenv('DATABASE_PASSWORD');
         $dbConn = new PDO("mysql:host=$dbHost;port=$dbPort;dbname=$dbName", $username, $password);
         $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
         $sql = "SELECT c.name, c.make, c.model, t.ticket_id, t.time, ps.parking_spot_id, d.name AS driver
@@ -166,12 +166,11 @@
         array_push($_SESSION['carArray'],$carArray);
     }
     function genParkingLotArray(){
-        $carCount=0;
-        $dbHost = getenv('IP');
+        $dbHost = getenv('DATABASE_HOST');
         $dbPort = 3306;
-        $dbName = "valet";
-        $username = getenv('C9_USER');
-        $password = "";
+        $dbName = getenv('DATABASE_NAME');
+        $username = getenv('DATABASE_USER');
+        $password = getenv('DATABASE_PASSWORD');
         $dbConn = new PDO("mysql:host=$dbHost;port=$dbPort;dbname=$dbName", $username, $password);
         $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
         $sql = "SELECT ps.parking_spot_id, ps.status, c.name, t.ticket_id, c.customer_id  
@@ -207,12 +206,11 @@
         echo "<div>";
         echo "<div class='btn btn-primary' id='target'>Confirm</div>";
         echo '<form action="group.php" method="post">';
-        echo "<input type='submit' value='Clear' name='clear' >";
+        echo "<input type='submit' value='Clear' name='clear></div>";
         echo '</form>';
         echo "</div>";
 
     }
-
 ?>   
 </body>
 </html>
