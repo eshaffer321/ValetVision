@@ -135,8 +135,9 @@
         $dbName = getenv('DATABASE_NAME');
         $username = getenv('DATABASE_USERNAME');
         $password = getenv('DATABASE_PASSWORD');
+        
         $dbConn = new PDO("mysql:host=$dbHost;port=$dbPort;dbname=$dbName", $username, $password);
-        $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
+        $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $sql = "SELECT c.name, c.make, c.model, t.ticket_id, t.time, ps.parking_spot_id, d.name AS driver
                 FROM ticket AS t
                 JOIN customer AS c
@@ -171,8 +172,9 @@
         $dbName = getenv('DATABASE_NAME');
         $username = getenv('DATABASE_USERNAME');
         $password = getenv('DATABASE_PASSWORD');
+        
         $dbConn = new PDO("mysql:host=$dbHost;port=$dbPort;dbname=$dbName", $username, $password);
-        $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
+        $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $sql = "SELECT ps.parking_spot_id, ps.status, c.name, t.ticket_id, c.customer_id  
                 FROM parking_spot AS ps
                 LEFT JOIN ticket AS t
