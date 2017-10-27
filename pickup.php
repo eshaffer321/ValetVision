@@ -12,7 +12,7 @@
         play();
         // need to update parking spot table status
         function play(){
-            $dbHost = getenv('IP');
+            $dbHost = getenv('DATABASE_HOST');
             $dbPort = 3306;
             $dbName = getenv('DATABASE_NAME');
             $username = getenv('DATABASE_USERNAME');
