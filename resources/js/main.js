@@ -66,7 +66,7 @@ $( document ).ready(function() {
                 break;
         }
         $('#output_table').empty();
-        $('#order').prop('disabled', false);
+        $('#order').attr('disabled', 'disabled').html('<option>...</option>').selectpicker('refresh');
         $("#order")
                 .html('<option>Ascending</option><option>Descending</option>')
                 .selectpicker('refresh');
@@ -91,6 +91,7 @@ $( document ).ready(function() {
                 break;
         }
         var fitler = $('#filter').find(":selected").text();
+        $('#order').prop('disabled', false);
         $('#order').val('Ascending').selectpicker('refresh');
         var order = 'Ascending';
         $('#output_table').empty();

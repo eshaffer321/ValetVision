@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 [22-Oct-2017 19:09:37 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 19
 [24-Oct-2017 00:06:04 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/valet/resources/functions/insert.php on line 17
 [24-Oct-2017 00:06:04 UTC] PHP Stack trace:
@@ -703,115 +702,9 @@ Stack trace:
 #2 {main}
   thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 329
 >>>>>>> 9f1ba4810c511bbe8adb3e559aab4575fcb3a39d
-[27-Oct-2017 03:34:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'paid_status' in 'field list'' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:386
-Stack trace:
-#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(386): PDOStatement->execute()
-#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(241): executeSQL(Object(PDO), 'SELECT customer...')
-#2 {main}
-  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 386
-[27-Oct-2017 03:34:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'paid_status' in 'field list'' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:386
-Stack trace:
-#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(386): PDOStatement->execute()
-#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(241): executeSQL(Object(PDO), 'SELECT customer...')
-#2 {main}
-  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 386
-[27-Oct-2017 03:34:54 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'paid_status' in 'where clause'' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:360
+[27-Oct-2017 03:59:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC' at line 1' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:360
 Stack trace:
 #0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(360): PDOStatement->execute()
-#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(243): queryFilter('customer', 'paid_status', 1, Object(PDO))
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(148): queryFilter('parking_spot', 'status', 1, Object(PDO))
 #2 {main}
   thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 360
-[27-Oct-2017 03:34:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'paid_status' in 'where clause'' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:360
-Stack trace:
-#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(360): PDOStatement->execute()
-#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(243): queryFilter('customer', 'paid_status', 0, Object(PDO))
-#2 {main}
-  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 360
-[27-Oct-2017 03:35:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'paid_status' in 'field list'' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:386
-Stack trace:
-#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(386): PDOStatement->execute()
-#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(241): executeSQL(Object(PDO), 'SELECT customer...')
-#2 {main}
-  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 386
-[27-Oct-2017 03:35:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'paid_status' in 'field list'' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:386
-Stack trace:
-#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(386): PDOStatement->execute()
-#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(241): executeSQL(Object(PDO), 'SELECT customer...')
-#2 {main}
-  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 386
-[27-Oct-2017 03:35:37 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'active_status' in 'where clause'' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:360
-Stack trace:
-#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(360): PDOStatement->execute()
-#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(189): queryFilter('driver', 'active_status', 1, Object(PDO))
-#2 {main}
-  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 360
-[27-Oct-2017 03:35:39 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'active_status' in 'where clause'' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:360
-Stack trace:
-#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(360): PDOStatement->execute()
-#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(189): queryFilter('driver', 'active_status', 0, Object(PDO))
-#2 {main}
-  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 360
-=======
-[27-Oct-2017 04:25:02 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ubuntu/workspace/valet/resources/functions/group.php:95) in /home/ubuntu/workspace/valet/resources/functions/group.php on line 56
-[27-Oct-2017 04:25:02 UTC] PHP Stack trace:
-[27-Oct-2017 04:25:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/group.php:0
-[27-Oct-2017 04:25:02 UTC] PHP   2. play() /home/ubuntu/workspace/valet/resources/functions/group.php:18
-[27-Oct-2017 04:25:02 UTC] PHP   3. header() /home/ubuntu/workspace/valet/resources/functions/group.php:56
-[27-Oct-2017 05:02:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ubuntu/workspace/valet/resources/functions/group.php:84) in /home/ubuntu/workspace/valet/resources/functions/group.php on line 56
-[27-Oct-2017 05:02:09 UTC] PHP Stack trace:
-[27-Oct-2017 05:02:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/group.php:0
-[27-Oct-2017 05:02:09 UTC] PHP   2. play() /home/ubuntu/workspace/valet/resources/functions/group.php:18
-[27-Oct-2017 05:02:09 UTC] PHP   3. header() /home/ubuntu/workspace/valet/resources/functions/group.php:56
-[27-Oct-2017 05:02:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ubuntu/workspace/valet/resources/functions/group.php:84) in /home/ubuntu/workspace/valet/resources/functions/group.php on line 56
-[27-Oct-2017 05:02:22 UTC] PHP Stack trace:
-[27-Oct-2017 05:02:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/group.php:0
-[27-Oct-2017 05:02:22 UTC] PHP   2. play() /home/ubuntu/workspace/valet/resources/functions/group.php:18
-[27-Oct-2017 05:02:22 UTC] PHP   3. header() /home/ubuntu/workspace/valet/resources/functions/group.php:56
-[27-Oct-2017 05:02:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ubuntu/workspace/valet/resources/functions/group.php:84) in /home/ubuntu/workspace/valet/resources/functions/group.php on line 56
-[27-Oct-2017 05:02:28 UTC] PHP Stack trace:
-[27-Oct-2017 05:02:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/group.php:0
-[27-Oct-2017 05:02:28 UTC] PHP   2. play() /home/ubuntu/workspace/valet/resources/functions/group.php:18
-[27-Oct-2017 05:02:28 UTC] PHP   3. header() /home/ubuntu/workspace/valet/resources/functions/group.php:56
-[27-Oct-2017 05:02:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ubuntu/workspace/valet/resources/functions/group.php:84) in /home/ubuntu/workspace/valet/resources/functions/group.php on line 56
-[27-Oct-2017 05:02:34 UTC] PHP Stack trace:
-[27-Oct-2017 05:02:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/group.php:0
-[27-Oct-2017 05:02:34 UTC] PHP   2. play() /home/ubuntu/workspace/valet/resources/functions/group.php:18
-[27-Oct-2017 05:02:34 UTC] PHP   3. header() /home/ubuntu/workspace/valet/resources/functions/group.php:56
-[27-Oct-2017 05:02:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ubuntu/workspace/valet/resources/functions/group.php:84) in /home/ubuntu/workspace/valet/resources/functions/group.php on line 56
-[27-Oct-2017 05:02:40 UTC] PHP Stack trace:
-[27-Oct-2017 05:02:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/group.php:0
-[27-Oct-2017 05:02:40 UTC] PHP   2. play() /home/ubuntu/workspace/valet/resources/functions/group.php:18
-[27-Oct-2017 05:02:40 UTC] PHP   3. header() /home/ubuntu/workspace/valet/resources/functions/group.php:56
-[27-Oct-2017 05:03:06 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ubuntu/workspace/valet/resources/functions/group.php:84) in /home/ubuntu/workspace/valet/resources/functions/group.php on line 56
-[27-Oct-2017 05:03:06 UTC] PHP Stack trace:
-[27-Oct-2017 05:03:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/group.php:0
-[27-Oct-2017 05:03:06 UTC] PHP   2. play() /home/ubuntu/workspace/valet/resources/functions/group.php:18
-[27-Oct-2017 05:03:06 UTC] PHP   3. header() /home/ubuntu/workspace/valet/resources/functions/group.php:56
-[27-Oct-2017 05:03:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ubuntu/workspace/valet/resources/functions/group.php:84) in /home/ubuntu/workspace/valet/resources/functions/group.php on line 56
-[27-Oct-2017 05:03:36 UTC] PHP Stack trace:
-[27-Oct-2017 05:03:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/group.php:0
-[27-Oct-2017 05:03:36 UTC] PHP   2. play() /home/ubuntu/workspace/valet/resources/functions/group.php:18
-[27-Oct-2017 05:03:36 UTC] PHP   3. header() /home/ubuntu/workspace/valet/resources/functions/group.php:56
-[27-Oct-2017 05:03:41 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ubuntu/workspace/valet/resources/functions/group.php:84) in /home/ubuntu/workspace/valet/resources/functions/group.php on line 56
-[27-Oct-2017 05:03:41 UTC] PHP Stack trace:
-[27-Oct-2017 05:03:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/group.php:0
-[27-Oct-2017 05:03:41 UTC] PHP   2. play() /home/ubuntu/workspace/valet/resources/functions/group.php:18
-[27-Oct-2017 05:03:41 UTC] PHP   3. header() /home/ubuntu/workspace/valet/resources/functions/group.php:56
-[27-Oct-2017 05:03:54 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ubuntu/workspace/valet/resources/functions/group.php:84) in /home/ubuntu/workspace/valet/resources/functions/group.php on line 56
-[27-Oct-2017 05:03:54 UTC] PHP Stack trace:
-[27-Oct-2017 05:03:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/group.php:0
-[27-Oct-2017 05:03:54 UTC] PHP   2. play() /home/ubuntu/workspace/valet/resources/functions/group.php:18
-[27-Oct-2017 05:03:54 UTC] PHP   3. header() /home/ubuntu/workspace/valet/resources/functions/group.php:56
-[27-Oct-2017 05:04:02 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ubuntu/workspace/valet/resources/functions/group.php:84) in /home/ubuntu/workspace/valet/resources/functions/group.php on line 56
-[27-Oct-2017 05:04:02 UTC] PHP Stack trace:
-[27-Oct-2017 05:04:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/group.php:0
-[27-Oct-2017 05:04:02 UTC] PHP   2. play() /home/ubuntu/workspace/valet/resources/functions/group.php:18
-[27-Oct-2017 05:04:02 UTC] PHP   3. header() /home/ubuntu/workspace/valet/resources/functions/group.php:56
-[27-Oct-2017 05:04:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ubuntu/workspace/valet/resources/functions/group.php:84) in /home/ubuntu/workspace/valet/resources/functions/group.php on line 56
-[27-Oct-2017 05:04:27 UTC] PHP Stack trace:
-[27-Oct-2017 05:04:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/group.php:0
-[27-Oct-2017 05:04:27 UTC] PHP   2. play() /home/ubuntu/workspace/valet/resources/functions/group.php:18
-[27-Oct-2017 05:04:27 UTC] PHP   3. header() /home/ubuntu/workspace/valet/resources/functions/group.php:56
-[27-Oct-2017 05:25:30 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/ubuntu/workspace/valet/resources/functions/group.php on line 208
-[27-Oct-2017 05:30:30 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/ubuntu/workspace/valet/resources/functions/group.php on line 209
->>>>>>> 840d16f8116e7ca29d9dfad58ac775e6d12c32d1
