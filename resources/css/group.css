@@ -33,11 +33,12 @@ td {
     font-family: 'Ubuntu', sans-serif;
     background: #2e2f30;
     position: relative;
-    top: 195px;
+    top: 30%;
     width: 130%;
 }
 .parkingLotContainer input[type="submit"]{
     transform: rotate(90deg);
+    margin-top: -4px;
 }
 input[type="submit"]{
     margin-right: 0;
@@ -118,7 +119,7 @@ img {
     width: 20%;
     position: fixed;
     top: 0;
-    left: 500px;
+    left: 39.5%;
 }
 .confirmationPage {
     background-color: green;

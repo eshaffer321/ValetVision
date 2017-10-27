@@ -20,7 +20,7 @@
     
     play();
     function play(){
-        echo "<div class = 'parkingLotContainer'>";
+        echo "<div class = 'parkingLotContainer container-fluid'>";
         genCarArray();
         genParkingLotArray();
         genParkingLot();
@@ -28,9 +28,9 @@
         $carArray = $carArray[0];
         // print_r($carArray);
         echo "</div>";
-        echo "<div class = 'infoDisplayContainer'>";
+        echo "<div class = 'infoDisplayContainer container-fluid'>";
         echo '<div class="centerInfoDisplay">';
-        echo '<img src="../img/valet.png" ></img>';
+        echo '<img src="../img/valet.png" class "image-fluid" ></img>';
         echo "<div class = 'leftInfoDisplay'>";
         if(isset($_POST['button'])){
             $carOwner = key($_POST['button']);
@@ -207,7 +207,7 @@
         echo "<div>";
         echo "<div class='btn btn-primary' id='target'>Confirm</div>";
         echo '<form action="group.php" method="post">';
-        echo "<div class='btn btn-danger'>Clear<input type='submit' value='Clear' name='clear></div>";
+        echo "<input type='submit' value='Clear' name='clear' >";
         echo '</form>';
         echo "</div>";
 
