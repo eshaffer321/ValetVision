@@ -205,9 +205,9 @@
             $count += 1;
         }
         echo "<div>";
-        echo "<div class='btn btn-primary' id='target'>Confirm</div>";
+        echo "<div class='btn btn-primary confirmButtons' id='target'>Confirm</div>";
         echo '<form action="group.php" method="post">';
-        echo "<input type='submit' value='Clear' name='clear' >";
+        echo "<input type='submit' value='Clear' name='clear' class = 'confirmButtons' >";
         echo '</form>';
         echo "</div>";
 
