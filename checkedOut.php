@@ -32,7 +32,7 @@ function updateDelivery($ticketNum) {
    $dbHost = getenv('DATABASE_HOST');
     $dbPort = 3306;
     $dbName = getenv('DATABASE_NAME');
-    $username = getenv('DATABASE_USER');
+    $username = getenv('DATABASE_USERNAME');
     $password = getenv('DATABASE_PASSWORD');
     $dbConn = new PDO("mysql:host=$dbHost;port=$dbPort;dbname=$dbName", $username, $password);
     $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
