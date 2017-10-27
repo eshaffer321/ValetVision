@@ -702,3 +702,9 @@ Stack trace:
 #2 {main}
   thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 329
 >>>>>>> 9f1ba4810c511bbe8adb3e559aab4575fcb3a39d
+[27-Oct-2017 03:59:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC' at line 1' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:360
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(360): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(148): queryFilter('parking_spot', 'status', 1, Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 360
