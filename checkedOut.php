@@ -6,7 +6,7 @@ $carArray = $_SESSION['carArray'];
 $count = 0;
 echo "<div class = 'carCheckout'>";
 foreach($_SESSION as $key){
-    if($count > 0){
+    if($count > 1){
         $customerArray = $carArray[0][(string)$key[0]];
         $ticket = $customerArray[6];
         $delivDriver = updateDelivery($ticket);
@@ -24,7 +24,7 @@ function updateDelivery($ticketNum){
     $dbHost = getenv('IP');
     $dbPort = 3306;
     $dbName = "valet";
-    $username = getenv('C9_USER');
+    $username = "adrianmartinez";
     $password = "";
     $dbConn = new PDO("mysql:host=$dbHost;port=$dbPort;dbname=$dbName", $username, $password);
     $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 

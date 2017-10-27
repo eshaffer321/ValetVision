@@ -3,6 +3,8 @@ html, body {
     text-align: center;
     background: black;
     font-family: 'Yesteryear', cursive;
+
+
 }
 .bigContainer {
     width: 100%;
@@ -35,15 +37,28 @@ html, body {
     top: 360px;
     left: -15px;
     vertical-align: middle;
-    margin: 0 20px;
-    border-color: #aab2c1;
+    margin: 0 50px;
+    border-color: white;
     color: white;
     background-color: Transparent;
+    border-right: none;
+    border-left: none;
+    border-radius: 0;
+    transition: all 0.9s ease 0s;
+}
+.btn-primary:active:hover {
+    background-color: white;
+    color: black;
 }
 .btn-primary:hover {
-    background-color: black;
-    border-color: white;
-    
+    background-color: #4a4d51;
+    border-color: black;
+    text-decoration: none;
+    opacity: .5;
+    box-shadow: inset 0 0 0 1px #aab2c1;
+}
+a:hover {
+    text-decoration: none;
 }
 .headContainer{
     text-align: center;
@@ -57,4 +72,7 @@ h1 {
     font-size: 150px;
     text-shadow: 4px 5px white;
     font-family: 'Mr Dafoe', cursive;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
