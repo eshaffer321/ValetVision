@@ -10,11 +10,11 @@
      * from .env when deployed.
      */
     function getDatabaseConnection() {
-        $dbHost = getenv('IP');
+        $dbHost = getenv('DATABASE_HOST');
         $dbPort = 3306;
-        $dbName = "valet";
-        $username = getenv('C9_USER');
-        $password = "";
+        $dbName = getenv('DATABASE_NAME');
+        $username = getenv('DATABASE_USERNAME');
+        $password = getenv('DATABASE_PASSWORD');
         
         $dbConn = new PDO("mysql:host=$dbHost;port=$dbPort;dbname=$dbName", $username, $password);
         $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -161,8 +161,6 @@
                 $ticketInfo['parkingSpot'] = $row['Parking_ID'];
                 $ticketInfo['time'] = $row['time'];
             }
-            
             return $ticketInfo;
         }
 ?>
-

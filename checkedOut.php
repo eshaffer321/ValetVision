@@ -21,19 +21,19 @@ foreach($_SESSION as $key){
     }
     $count += 1;
 }
- echo "</h3>";
+echo "</h3>";
 echo "<br>";
 echo "</div>";
 session_destroy();
 echo " <a href='index.php'><div class='btn btn-primary'>Back to Homepage</div></a>";
 echo "</div>";
 
-function updateDelivery($ticketNum){
-    $dbHost = getenv('IP');
+function updateDelivery($ticketNum) {
+   $dbHost = getenv('DATABASE_HOST');
     $dbPort = 3306;
-    $dbName = "valet";
-    $username = "adrianmartinez";
-    $password = "";
+    $dbName = getenv('DATABASE_NAME');
+    $username = getenv('DATABASE_USERNAME');
+    $password = getenv('DATABASE_PASSWORD');
     $dbConn = new PDO("mysql:host=$dbHost;port=$dbPort;dbname=$dbName", $username, $password);
     $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
     $ticketExecute = array(":ticket_id" =>  $ticketNum);
