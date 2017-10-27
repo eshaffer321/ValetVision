@@ -144,6 +144,7 @@ if(isset($_POST['filter'])) {
                 $new_filter = 0;
                 break;
         }
+        
         $stmt = queryFilter($table, $match, $new_filter, $dbConn);
         $str = "<div class='table-responsive'>";
         $str = $str . "<table class='table table-bordered'>";
@@ -323,14 +324,64 @@ function queryAll($table, $dbConn) {
     return $stmt;
 }
 
+$sortArray = array(
+        "Make" => 'make',
+        "Model" => "model",
+        "Customer ID" => 'customer_id',
+        "Name" => 'name',
+        "Driver ID" => 'driver_id',
+        "Parking Spot ID" => 'parking_spot_id',
+        "Dropoff Time" => 'time'
+    );
 function queryFilter($table, $match, $new_filter, $dbConn) {
     $sql = "SELECT * FROM $table WHERE `$match` = $new_filter";
+    $sortArray = array(
+        "Make" => 'make',
+        "Model" => "model",
+        "Customer ID" => 'customer_id',
+        "Name" => 'name',
+        "Driver ID" => 'driver_id',
+        "Parking Spot ID" => 'parking_spot_id',
+        "Dropoff Time" => 'time'
+    );
+    if (isset($_POST['order']) && isset($_POST['sort'])) {
+        $order = $_POST['order'];
+        $sort = $_POST['sort'];
+        $orderBy = $sortArray[$sort];
+        if ($order == 'Ascending') {
+            $sort = 'ASC';
+        } else {
+            $sort = 'DESC';
+        }
+        $sql = $sql. ' ORDER BY ' . $orderBy . ' ' . $sort;
+    }
+    
     $stmt = $dbConn -> prepare ($sql);
     $stmt -> execute ();
     return $stmt;
 }
 
 function executeSQL($dbConn, $sql) {
+    $sortArray = array(
+        "Make" => 'make',
+        "Model" => "model",
+        "Customer ID" => 'customer_id',
+        "Name" => 'name',
+        "Driver ID" => 'driver_id',
+        "Parking Spot ID" => 'parking_spot_id',
+        "Dropoff Time" => 'time'
+    );
+    if (isset($_POST['order']) && isset($_POST['sort'])) {
+        $order = $_POST['order'];
+        $sort = $_POST['sort'];
+        $orderBy = $sortArray[$sort];
+        if ($order == 'Ascending') {
+            $sort = 'ASC';
+        } else {
+            $sort = 'DESC';
+        }
+        $sql = $sql. ' ORDER BY ' . $orderBy . ' ' . $sort;
+    }
     $stmt = $dbConn -> prepare ($sql);
     $stmt -> execute ();
     return $stmt;

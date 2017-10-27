@@ -73,6 +73,53 @@ $( document ).ready(function() {
         getFilteredData(tableName, filterName);
     });
     
+    $('#sort').on('change', function(e) {
+        var sort = this.value;
+        var tableName = $('#tables').find(":selected").text();
+        switch(tableName) {
+            case 'Parking Spots':
+                tableName = 'parking_spot';
+                break;
+            case 'Drivers':
+                tableName = 'driver';
+                break;
+            case 'Customers':
+                tableName= 'customer';
+                break;
+            case 'Tickets':
+                tableName = 'ticket';
+                break;
+        }
+        var fitler = $('#filter').find(":selected").text();
+        $('#order').val('Ascending').selectpicker('refresh');
+        var order = 'Ascending';
+        $('#output_table').empty();
+        getFilteredDataSorted(tableName, fitler, sort, order);
+    });
+    
+    $('#order').on('change', function(e) {
+        var order = this.value;
+        var tableName = $('#tables').find(":selected").text();
+        var filter = $('#filter').find(":selected").text();
+        var sort = $('#sort').find(":selected").text();
+        switch(tableName) {
+            case 'Parking Spots':
+                tableName = 'parking_spot';
+                break;
+            case 'Drivers':
+                tableName = 'driver';
+                break;
+            case 'Customers':
+                tableName= 'customer';
+                break;
+            case 'Tickets':
+                tableName = 'ticket';
+                break;
+        }
+        $('#output_table').empty();
+        getFilteredDataSorted(tableName, filter, sort, order);
+    });
+    
     function getData(table) {
         $.post('admin_data.php', {table: table}, function(data) {
             $(data).appendTo('#output_table');
@@ -84,5 +131,10 @@ $( document ).ready(function() {
             $(data).appendTo('#output_table');
         }); 
     }
-
+    
+    function getFilteredDataSorted(table, filter, sort, order) {
+        $.post('admin_data.php', {table: table, filter: filter, sort: sort, order:order}, function(data) {
+            $(data).appendTo('#output_table');
+        });
+    }
 });

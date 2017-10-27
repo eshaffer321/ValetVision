@@ -432,3 +432,234 @@ Stack trace:
 [26-Oct-2017 23:59:53 UTC] PHP Fatal error:  Call to undefined function querySQL() in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 283
 [26-Oct-2017 23:59:53 UTC] PHP Stack trace:
 [26-Oct-2017 23:59:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/admin_data.php:0
+[27-Oct-2017 02:16:18 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 348
+[27-Oct-2017 02:16:19 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 348
+[27-Oct-2017 02:16:31 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 348
+[27-Oct-2017 02:32:18 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 160
+[27-Oct-2017 02:32:18 UTC] PHP Stack trace:
+[27-Oct-2017 02:32:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/admin_data.php:0
+[27-Oct-2017 02:32:19 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 160
+[27-Oct-2017 02:32:19 UTC] PHP Stack trace:
+[27-Oct-2017 02:32:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/admin_data.php:0
+[27-Oct-2017 02:33:11 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BYDESC' at line 1' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:351
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(351): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(148): queryFilter('parking_spot', 'status', 0, Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 351
+[27-Oct-2017 02:33:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BY DESC' at line 1' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:351
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(351): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(148): queryFilter('parking_spot', 'status', 0, Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 351
+[27-Oct-2017 02:34:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BY  DESC' at line 1' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:351
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(351): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(148): queryFilter('parking_spot', 'status', 0, Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 351
+[27-Oct-2017 02:47:21 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `` =' at line 1' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:386
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(386): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(284): executeSQL(Object(PDO), 'SELECT * FROM `...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 386
+[27-Oct-2017 02:47:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `` =  ORDER BY time DESC' at line 1' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:386
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(386): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(284): executeSQL(Object(PDO), 'SELECT * FROM `...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 386
+[27-Oct-2017 02:54:39 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 160
+[27-Oct-2017 02:54:39 UTC] PHP Stack trace:
+[27-Oct-2017 02:54:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/admin_data.php:0
+[27-Oct-2017 02:54:40 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 160
+[27-Oct-2017 02:54:40 UTC] PHP Stack trace:
+[27-Oct-2017 02:54:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/admin_data.php:0
+[27-Oct-2017 02:55:22 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 160
+[27-Oct-2017 02:55:22 UTC] PHP Stack trace:
+[27-Oct-2017 02:55:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/admin_data.php:0
+[27-Oct-2017 02:55:23 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 160
+[27-Oct-2017 02:55:23 UTC] PHP Stack trace:
+[27-Oct-2017 02:55:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/admin_data.php:0
+[27-Oct-2017 02:55:27 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 160
+[27-Oct-2017 02:55:27 UTC] PHP Stack trace:
+[27-Oct-2017 02:55:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/admin_data.php:0
+[27-Oct-2017 02:55:32 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 160
+[27-Oct-2017 02:55:32 UTC] PHP Stack trace:
+[27-Oct-2017 02:55:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/admin_data.php:0
+[27-Oct-2017 02:55:58 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 160
+[27-Oct-2017 02:55:58 UTC] PHP Stack trace:
+[27-Oct-2017 02:55:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/admin_data.php:0
+[27-Oct-2017 02:55:59 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 160
+[27-Oct-2017 02:55:59 UTC] PHP Stack trace:
+[27-Oct-2017 02:55:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/admin_data.php:0
+[27-Oct-2017 03:00:05 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ACS' at line 1' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:360
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(360): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(148): queryFilter('parking_spot', 'status', 1, Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 360
+[27-Oct-2017 03:00:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ACS' at line 1' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:360
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(360): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(148): queryFilter('parking_spot', 'status', 1, Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 360
+[27-Oct-2017 03:00:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ACS' at line 1' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:360
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(360): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(148): queryFilter('parking_spot', 'status', 1, Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 360
+[27-Oct-2017 03:08:08 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `` =' at line 1' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:388
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(388): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(284): executeSQL(Object(PDO), 'SELECT * FROM `...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 388
+[27-Oct-2017 03:08:10 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `` =  ORDER BY time ASC' at line 1' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:388
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(388): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(284): executeSQL(Object(PDO), 'SELECT * FROM `...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 388
+[27-Oct-2017 03:08:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `` =  ORDER BY time DESC' at line 1' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:388
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(388): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(284): executeSQL(Object(PDO), 'SELECT * FROM `...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 388
+[27-Oct-2017 03:08:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `` =' at line 1' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:388
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(388): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(284): executeSQL(Object(PDO), 'SELECT * FROM `...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 388
+[27-Oct-2017 03:08:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `` =' at line 1' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:388
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(388): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(241): executeSQL(Object(PDO), 'SELECT customer...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 388
+[27-Oct-2017 03:08:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `` =' at line 1' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:388
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(388): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(241): executeSQL(Object(PDO), 'SELECT customer...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 388
+[27-Oct-2017 03:09:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `` =' at line 1' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:388
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(388): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(241): executeSQL(Object(PDO), 'SELECT customer...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 388
+[27-Oct-2017 03:09:08 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `` =' at line 1' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:388
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(388): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(241): executeSQL(Object(PDO), 'SELECT customer...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 388
+[27-Oct-2017 03:11:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `` =' at line 1' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:388
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(388): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(241): executeSQL(Object(PDO), 'SELECT customer...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 388
+[27-Oct-2017 03:11:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `` =' at line 1' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:388
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(388): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(241): executeSQL(Object(PDO), 'SELECT customer...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 388
+[27-Oct-2017 03:11:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `` =' at line 1' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:388
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(388): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(284): executeSQL(Object(PDO), 'SELECT * FROM `...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 388
+[27-Oct-2017 03:11:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `` =' at line 1' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:388
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(388): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(284): executeSQL(Object(PDO), 'SELECT * FROM `...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 388
+[27-Oct-2017 03:22:15 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:358
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(358): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(148): queryFilter('parking_spot', 'status', 1, Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 358
+[27-Oct-2017 03:22:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:358
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(358): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(148): queryFilter('parking_spot', 'status', 0, Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 358
+[27-Oct-2017 03:22:43 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:358
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(358): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(243): queryFilter('customer', 'paid_status', 1, Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 358
+[27-Oct-2017 03:22:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:358
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(358): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(148): queryFilter('parking_spot', 'status', 0, Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 358
+[27-Oct-2017 03:22:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:358
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(358): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(148): queryFilter('parking_spot', 'status', 1, Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 358
+[27-Oct-2017 03:23:10 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:358
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(358): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(148): queryFilter('parking_spot', 'status', 0, Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 358
+[27-Oct-2017 03:23:11 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:358
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(358): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(148): queryFilter('parking_spot', 'status', 1, Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 358
+[27-Oct-2017 03:23:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY parking_spot_id ASC' at line 1' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:358
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(358): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(148): queryFilter('parking_spot', 'status', 1, Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 358
+[27-Oct-2017 03:23:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:358
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(358): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(189): queryFilter('driver', 'active_status', 1, Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 358
+[27-Oct-2017 03:23:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:358
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(358): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(189): queryFilter('driver', 'active_status', 0, Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 358
+[27-Oct-2017 03:27:11 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:360
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(360): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(148): queryFilter('parking_spot', 'status', 0, Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 360
+[27-Oct-2017 03:27:15 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:360
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(360): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(148): queryFilter('parking_spot', 'status', 1, Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 360
+[27-Oct-2017 03:27:19 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:360
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(360): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(243): queryFilter('customer', 'paid_status', 1, Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 360
