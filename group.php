@@ -6,7 +6,7 @@
     <title>Check Out</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 </head>
 <body>
 <?php
@@ -26,6 +26,8 @@
         // print_r($carArray);
         echo "</div>";
         echo "<div class = 'infoDisplayContainer'>";
+        echo '<div class="centerInfoDisplay">';
+        echo '<img src="img/valet.png" ></img>';
         echo "<div class = 'leftInfoDisplay'>";
         if(isset($_POST['button'])){
             $carOwner = key($_POST['button']);
@@ -48,6 +50,7 @@
         }
         if(isset($_POST['clear'])){
             session_destroy();
+            genParkingLotArray();
         }
         if(isset($_POST['confirm'])){
             header('Location: checkedOut.php');
@@ -63,6 +66,7 @@
         echo '<tbody>';
         $count = 0;
         $row = 0;
+        $k = 0;
         foreach($parkingLotArray as $spot){
             if($count == 0){
                 echo '<tr>';
@@ -74,14 +78,13 @@
             $customerId = $spot[4];
             echo "<div>";
             if($status == 0){
-                echo "<td class='row$row'> </td>";
-                echo "</div>";
+                echo "<td class = 'row$row'>$k</td>";
             }
             else{
-                echo "<td class='row$row'><input type='submit' value='$carOwner' name='button[$carOwner]' ></td>";
-                echo "</div>";
+                echo "<td class = 'row$row'><input type='submit' value='$carOwner' name='button[$carOwner]' ></td>";
             }
-            if($count == 9){
+            echo "</div>";
+            if($count == 11){
                 echo '</tr>';
                 $count = 0;
                 $row += 1;
@@ -95,7 +98,7 @@
                     echo "</tr>";
                 }
             }
-            
+            $k += 1;
             $count += 1;
         }
         echo '</tbody>';

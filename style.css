@@ -2,32 +2,40 @@ html, body {
     height: 100%;
     width: 100%;
     text-align: center;
-    background: #232526;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #2e2f30;
+    font-family: 'Ubuntu', sans-serif;
 }
 input {
     display: inline;
 }
 table {
-    position: fixed;
+    /*position: fixed;*/
     top: 200px;
     display: table;
     height: 50%;
     width: 80%;
     margin-left: 3%;
     color: white;
-    
 }
 tr {
     display: table-row;
     margin:0 auto; /* this will center  it */
-    position:relative;
+    /*position:relative;*/
 }
 td {
     text-align: center;
     height: 100px;
-    width: 70px;
+    width: 100px;
+}
+.parkingLotContainer {
+    font-family: 'Ubuntu', sans-serif;
+    background: #2e2f30;
+    position: relative;
+    top: 180px;
+    width: 130%;
+}
+.parkingLotContainer input[type="submit"]{
+    transform: rotate(90deg);
 }
 input[type="submit"]{
     margin-right: 0;
@@ -36,12 +44,12 @@ input[type="submit"]{
     height: 70px;
     color: black;
 }
-td.row0, td.row2{
+td.row0, td.row2, td.row4, td.row6{
     border-bottom: 2px solid yellow;
     border-right: 2px solid yellow;
     border-left: 2px solid yellow;
 }
-td.row1{
+td.row1, td.row3, td.row5, td.row7{
     border-top: 2px solid yellow;
     border-right: 2px solid yellow;
     border-left: 2px solid yellow;
@@ -55,11 +63,12 @@ td.row1{
     color: orange;
 }
 .infoDisplayContainer {
+    font-family: 'Ubuntu', sans-serif;
     border: 10px solid white;
     background-color: black;
     vertical-align: middle;
     color: white;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 30%;
     top: 0;
@@ -80,12 +89,11 @@ td.row1{
     background-color: #aab2c1;
 }
 .rightInfoDisplay {
-    
     position: fixed;
     right: 0;
     top: 0;
     border: 15px solid #aab2c1;
-    width: 60.5%;
+    width: 41%;
     height: 30%;
 }
 .rightInfoDisplay input[type="submit"] {
@@ -96,9 +104,19 @@ td.row1{
 .checkoutButtons input {
     display: inline;
     background-color: #aab2c1;
-    
     width: 50%;
     height: 30%;
+}
+img {
+    height: 180px;
+}
+.centerInfoDisplay {
+    background-color: #aab2c1;
+    height: 30%;
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: 500px;
 }
 .confirmationPage {
     background-color: green;
