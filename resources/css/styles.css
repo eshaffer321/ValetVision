@@ -1,7 +1,7 @@
 /** Ticket from https://bootsnipp.com/snippets/3M90p **/
 
 body {
-  background: #dd3f3e;
+  background: #222222;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
@@ -36,7 +36,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  border-top: 20px solid #dd3f3e;
+  border-top: 20px solid #222222;
   border-left: 20px solid #ef5658;
   width: 0;
 }
@@ -45,7 +45,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  border-bottom: 20px solid #dd3f3e;
+  border-bottom: 20px solid #222222;
   border-left: 20px solid #ef5658;
   width: 0;
 }
@@ -104,7 +104,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  border-top: 20px solid #dd3f3e;
+  border-top: 20px solid #222222;
   border-right: 20px solid #fff;
   width: 0;
 }
@@ -113,7 +113,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  border-bottom: 20px solid #dd3f3e;
+  border-bottom: 20px solid #222222;
   border-right: 20px solid #fff;
   width: 0;
 }

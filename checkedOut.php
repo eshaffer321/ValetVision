@@ -4,21 +4,29 @@ $carArray = $_SESSION['carArray'];
 // print_r($_SESSION['carArray']);
 // print_r($carArray);
 $count = 0;
+echo "<div class='container text-center'>";
+echo "<h1 class='jumbrotron'>Check Out</h1>";
 echo "<div class = 'carCheckout'>";
+echo "<h3>";
 foreach($_SESSION as $key){
-    if($count > 0){
+    if($count > 1){
         $customerArray = $carArray[0][(string)$key[0]];
         $ticket = $customerArray[6];
         $delivDriver = updateDelivery($ticket);
-        echo "Thank you, " . $customerArray[0] . " your " . $customerArray[1] . " " . $customerArray[2] . " will be delivered by " . $delivDriver . " shortly!" . "<br>";
+        echo "Thank you, " . "<b>" .$customerArray[0] . "</b>"
+        . " your " . "<b>" .$customerArray[1] . " " . $customerArray[2] 
+        . "</b>". " will be delivered by " . "<b>". $delivDriver . "</b>" 
+        . " shortly!" . "<br>";
+        echo "<br/>";
     }
     $count += 1;
 }
- 
+ echo "</h3>";
 echo "<br>";
 echo "</div>";
 session_destroy();
 echo " <a href='index.php'><div class='btn btn-primary'>Back to Homepage</div></a>";
+echo "</div>";
 
 function updateDelivery($ticketNum){
     $dbHost = getenv('IP');
@@ -65,7 +73,7 @@ function genRandDriver(){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Check Out</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/darkly/bootstrap.min.css">
 </head>
 <body>
     

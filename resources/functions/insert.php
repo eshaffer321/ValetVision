@@ -48,7 +48,13 @@
                   </section>
                 </div>
               </div>
-            </div>";
+            </div>
+            
+            <div class='container'>
+              <a href='../../index.php'><div class='btn btn-primary'>Go Home</div></a>
+            </div>"
+            
+            ;
     }
 ?>
 

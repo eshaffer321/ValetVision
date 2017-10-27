@@ -3,10 +3,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Check Out</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Valet | Check Out</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/group.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <script src="../js/pickup.js"></script>
+   
 </head>
 <body>
 <?php
@@ -27,7 +30,7 @@
         echo "</div>";
         echo "<div class = 'infoDisplayContainer'>";
         echo '<div class="centerInfoDisplay">';
-        echo '<img src="img/valet.png" ></img>';
+        echo '<img src="../img/valet.png" ></img>';
         echo "<div class = 'leftInfoDisplay'>";
         if(isset($_POST['button'])){
             $carOwner = key($_POST['button']);
@@ -51,9 +54,6 @@
         if(isset($_POST['clear'])){
             session_destroy();
             genParkingLotArray();
-        }
-        if(isset($_POST['confirm'])){
-            header('Location: checkedOut.php');
         }
         echo "</div>";
     } 
@@ -105,6 +105,7 @@
         echo '</table>';
         echo '</form>';
     }
+    
     function showCheckOutButton(){
         echo "<div class = 'checkout'>";
         echo '<form action="group.php" method="post">';
@@ -203,12 +204,13 @@
             }
             $count += 1;
         }
-        echo "<div class = 'checkoutButtons'>";
+        echo "<div>";
+        echo "<div class='btn btn-primary' id='target'>Confirm</div>";
         echo '<form action="group.php" method="post">';
-        echo "<input type='submit' value='Confirm' name='confirm'>";
-        echo "<input type='submit' value='Clear' name='clear'>";
+        echo "<div class='btn btn-danger'>Clear<input type='submit' value='Clear' name='clear></div>";
         echo '</form>';
         echo "</div>";
+
     }
 
 ?>   
