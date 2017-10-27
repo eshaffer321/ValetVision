@@ -432,6 +432,7 @@ Stack trace:
 [26-Oct-2017 23:59:53 UTC] PHP Fatal error:  Call to undefined function querySQL() in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 283
 [26-Oct-2017 23:59:53 UTC] PHP Stack trace:
 [26-Oct-2017 23:59:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/valet/resources/functions/admin_data.php:0
+<<<<<<< HEAD
 [27-Oct-2017 02:16:18 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 348
 [27-Oct-2017 02:16:19 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 348
 [27-Oct-2017 02:16:31 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 348
@@ -663,3 +664,41 @@ Stack trace:
 #1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(243): queryFilter('customer', 'paid_status', 1, Object(PDO))
 #2 {main}
   thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 360
+=======
+[27-Oct-2017 01:45:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'paid_status' in 'field list'' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:335
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(335): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(240): executeSQL(Object(PDO), 'SELECT customer...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 335
+[27-Oct-2017 01:45:08 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'paid_status' in 'field list'' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:335
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(335): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(240): executeSQL(Object(PDO), 'SELECT customer...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 335
+[27-Oct-2017 01:45:10 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'paid_status' in 'where clause'' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:329
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(329): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(242): queryFilter('customer', 'paid_status', 1, Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 329
+[27-Oct-2017 01:45:11 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'paid_status' in 'where clause'' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:329
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(329): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(242): queryFilter('customer', 'paid_status', 0, Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 329
+[27-Oct-2017 01:45:15 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'active_status' in 'where clause'' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:329
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(329): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(188): queryFilter('driver', 'active_status', 1, Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 329
+[27-Oct-2017 01:45:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'active_status' in 'where clause'' in /home/ubuntu/workspace/valet/resources/functions/admin_data.php:329
+Stack trace:
+#0 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(329): PDOStatement->execute()
+#1 /home/ubuntu/workspace/valet/resources/functions/admin_data.php(188): queryFilter('driver', 'active_status', 0, Object(PDO))
+#2 {main}
+  thrown in /home/ubuntu/workspace/valet/resources/functions/admin_data.php on line 329
+>>>>>>> 9f1ba4810c511bbe8adb3e559aab4575fcb3a39d
