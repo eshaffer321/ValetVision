@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class='container-fluid text-center'>
-        <h1>Valet App</h1>
+        <h1>Valet Vision</h1>
         <br/>
         <img src="resources/img/parking_garage.jpg" style="width: 100%;"></img>
         <br/>
