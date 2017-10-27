@@ -129,7 +129,7 @@
         $dbHost = getenv('IP');
         $dbPort = 3306;
         $dbName = "valet";
-        $username = "adrianmartinez";
+        $username = getenv('C9_USER');
         $password = "";
         $dbConn = new PDO("mysql:host=$dbHost;port=$dbPort;dbname=$dbName", $username, $password);
         $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
@@ -166,7 +166,7 @@
         $dbHost = getenv('IP');
         $dbPort = 3306;
         $dbName = "valet";
-        $username = "adrianmartinez";
+        $username = getenv('C9_USER');
         $password = "";
         $dbConn = new PDO("mysql:host=$dbHost;port=$dbPort;dbname=$dbName", $username, $password);
         $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
